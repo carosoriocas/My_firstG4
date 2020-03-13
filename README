@@ -1,0 +1,33 @@
+Programa básico de Geant4 hecho para la versión 10.6
+
+
+
+ 1- GEOMETRY DEFINITION
+	
+	La geometría consiste en un prisma rectangular (box) de material homogeneo (Agua)
+	de medidas:
+	 Xsize: 500 cm           Ysize: 100 cm          Zsize: 100 cm
+  
+ 	
+ 2- PHYSICS LIST
+ 
+	La 'Physics List' está definida de manera modular con G4VModularPhysicsList y de manera 
+	predefinida usa la librería Peneolpe para interacción electromagnéticas de baja energía.
+
+ 	 
+ 3- AN EVENT : THE PRIMARY GENERATOR
+ 
+	La partícula primaria definida es un fotón gamma que es lanzado desde el borde de la caja 
+	con una energía de 6 MeV. Para generarla se utiliza la librería G4ParticleGun
+     	
+    
+ 4- HOW TO START ?
+ 
+     - execute Test  in 'batch' mode from macro files
+ 	% TestEm7    proton.mac
+ 		
+     - execute Test  in 'interactive mode' with visualization
+ 	% TestEm7 
+ 		....
+ 	Idle> type your commands
+ 		....
